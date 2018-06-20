@@ -1,0 +1,9 @@
+build/
+*.c
+*.html
+*.so
+.idea/
+__pycache__
+*.pdf
+build
+*.csv

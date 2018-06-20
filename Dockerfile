@@ -8,10 +8,6 @@ RUN conda create --name bob_py3 --override-channels \
    conda config --env --add channels defaults && \
    conda config --env --add channels https://www.idiap.ch/software/bob/conda && \
    conda install bob.measure
-RUN apt-get update && \
-    apt-get -y install gcc mono-mcs && \
-    rm -rf /var/lib/apt/lists/*
-RUN pip install Cython
 ADD requirements.txt /usr/src/app
 RUN pip install -r requirements.txt
 ADD . /usr/src/app

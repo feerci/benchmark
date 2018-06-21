@@ -15,4 +15,4 @@ six
 sklearn
 tornado
 pandas
-feerci
+feerci==0.1.0
